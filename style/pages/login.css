@@ -8,7 +8,7 @@
 {
     height: var(--ld-header-size);
     width: 100%;
-    background-color: green;
+    background-color: white;
     box-shadow: 0px 4px 6px rgb(0, 0, 0, 0.15);
     
     position: fixed;
@@ -20,7 +20,19 @@
 {
     max-width: var(--ld-main-wrapper);
     margin: 0 auto;
-    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+}
+
+.ld-login >.ld-wrapper >.ld-header >.wrapper >.image-wrapper
+{
+    height: var(--ld-header-size);
+    padding: 16px 0;
+}
+
+.ld-login >.ld-wrapper >.ld-header >.wrapper >.image-wrapper >.image
+{
+    height: 100%;
 }
 
 .ld-login >.ld-wrapper >.main-content
@@ -32,10 +44,24 @@
 
 .ld-login >.ld-wrapper >.main-content >.left
 {
-    background-color: blue;
+    padding-top: 48px;
 }
 
 .ld-login >.ld-wrapper >.main-content >.right
 {
-    background-color: red;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.ld-login >.ld-wrapper >.main-content >.right >.image
+{
+    position: absolute;
+    height: 100%;
+    top: 0;
+
+    min-width: 100%;
+    /*To centralize the image in the div, ignoring the initial part of it and focusing on the content in the middle*/
+    left: 50%;
+    transform: translateX(-50%);
 }

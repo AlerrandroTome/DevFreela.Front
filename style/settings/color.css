@@ -1,5 +1,6 @@
 :root {
     /*PRIMARY*/
+    --ld-color-primary-light: #004cd8; 
     --ld-color-primary: #0041BE;
 
     /*DANGER*/
