@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - LD</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - LD</title>
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;800&display=swap" rel="stylesheet">
+        <!-- STYLES ITCSS -->
 
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;800&display=swap" rel="stylesheet">
-    <!-- STYLES ITCSS -->
+        <!-- SETTINGS -->
+        <link rel="stylesheet" href="style/settings/wrapper.css">
+        <link rel="stylesheet" href="style/settings/core.css">
+        <link rel="stylesheet" href="style/settings/color.css">
+        <link rel="stylesheet" href="style/settings/text.css">
 
-    <!-- SETTINGS -->
-    <link rel="stylesheet" href="style/settings/wrapper.css">
-    <link rel="stylesheet" href="style/settings/core.css">
-    <link rel="stylesheet" href="style/settings/color.css">
-    <link rel="stylesheet" href="style/settings/text.css">
+        <!-- GENERIC -->
+        <link rel="stylesheet" href="style/generic/reset.css">
+        <link rel="stylesheet" href="style/generic/box-sizing.css">
 
-    <!-- GENERIC -->
-    <link rel="stylesheet" href="style/generic/reset.css">
-    <link rel="stylesheet" href="style/generic/box-sizing.css">
+        <!-- BASE -->
+        <link rel="stylesheet" href="style/base/html.css">
 
-    <!-- BASE -->
+        <!-- OBJECTS -->
 
-    <!-- OBJECTS -->
+        <!-- COMPONENTS -->
+        <link rel="stylesheet" href="style/components/ld-button.css">
+        <link rel="stylesheet" href="style/components/ld-input.css">
+        <link rel="stylesheet" href="style/components/ld-radio.css">
 
-    <!-- COMPONENTS -->
-    <link rel="stylesheet" href="style/components/ld-button.css">
-    <link rel="stylesheet" href="style/components/ld-input.css">
+        <!-- PAGES -->
+        <link rel="stylesheet" href="style/pages/login.css">
+        <!-- TRUMPS -->
+    </head>
 
-    <!-- PAGES -->
-    <link rel="stylesheet" href="style/pages/login.css">
-    <!-- TRUMPS -->
-</head>
-
-<body>
-    <div class="ld-login">
-        <div class="ld-wrapper">
-            <header class="ld-header">
-                <div class="wrapper">
-                    <div class="image-wrapper">
-                        <img class="image" src="assets/logo/devfreela.svg" alt="Logo da DevFreela">
+    <body>
+        <div class="ld-login">
+            <div class="ld-wrapper">
+                <header class="ld-header">
+                    <div class="wrapper">
+                        <div class="image-wrapper">
+                            <img class="image" src="assets/logo/devfreela.svg" alt="Logo da DevFreela">
+                        </div>
                     </div>
-                </div>
-            </header>
-            <main class="main-content">
-                <div class="left">
-                    <!--<button class="ld-button">Continuar</button>-->
-                    <input class="ld-input" placeholder="Título">
-                </div>
-                <div class="right">
-                    <img class="image" src="assets/image/bg-cubes.png" alt="Fundo de decoração com 3 cubos com fundo gradiente das cores do arco-iris">
-                </div>
-            </main>
+                </header>
+                <main class="main-content">
+                    <div class="left">
+                        <!--<button class="ld-button">Continuar</button>-->
+                        <!--<input class="ld-input" placeholder="Título">-->
+                        <label class="ld-radio">
+                            Dev
+                            <input type="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="right">
+                        <img class="image" src="assets/image/bg-cubes.png" alt="Fundo de decoração com 3 cubos com fundo gradiente das cores do arco-iris">
+                    </div>
+                </main>
+            </div>
         </div>
-    </div>
-</body>
-
+    </body>
 </html>
