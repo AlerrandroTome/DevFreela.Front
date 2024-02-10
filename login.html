@@ -26,14 +26,17 @@
         <link rel="stylesheet" href="style/base/html.css">
 
         <!-- OBJECTS -->
+        <link rel="stylesheet" href="style/objects/ld-wrapper.css">
 
         <!-- COMPONENTS -->
         <link rel="stylesheet" href="style/components/ld-button.css">
         <link rel="stylesheet" href="style/components/ld-input.css">
         <link rel="stylesheet" href="style/components/ld-radio.css">
+        <link rel="stylesheet" href="style/components/ld-header.css">
 
         <!-- PAGES -->
         <link rel="stylesheet" href="style/pages/login.css">
+
         <!-- TRUMPS -->
     </head>
 
@@ -49,13 +52,31 @@
                 </header>
                 <main class="main-content">
                     <div class="left">
-                        <!--<button class="ld-button">Continuar</button>-->
-                        <!--<input class="ld-input" placeholder="Título">-->
-                        <label class="ld-radio">
-                            Dev
-                            <input type="radio">
-                            <span class="checkmark"></span>
-                        </label>
+                        <span class="steps">Passo 1 de 2</span>
+                        <h1 class="main-title">
+                            <span class="up">Olá!</span>
+                            <span class="down">Vamos criar seu cadastro</span>
+                        </h1>
+                        <div class="radio-buttons">
+                            <h3 class="title">Qual o seu perfil?</h3>
+                            <div class="buttons">
+                                <label class="ld-radio">
+                                    Dev
+                                    <input name="cargo" type="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="ld-radio">
+                                    Client
+                                    <input name="cargo" type="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <input class="ld-input" placeholder="Nome completo">
+                        <input class="ld-input" placeholder="Data de nascimento" type="date">
+                        <input class="ld-input" placeholder="Email" type="email">
+                        <input class="ld-input" placeholder="Senha" type="password">
+                        <button class="ld-button">Continuar</button>
                     </div>
                     <div class="right">
                         <img class="image" src="assets/image/bg-cubes.png" alt="Fundo de decoração com 3 cubos com fundo gradiente das cores do arco-iris">

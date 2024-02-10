@@ -2,7 +2,7 @@
 {
     background-color: var(--ld-color-primary);
     color: white;
-    font-size: calc(var(--font-size-base) + 8);
+    font-size: calc(var(--ld-font-size-base) + 8);
     font-weight: 800;
     padding: 20px;
     border-radius: 50px;

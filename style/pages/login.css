@@ -1,67 +1,48 @@
-.ld-login >.ld-wrapper
+.ld-login >.ld-wrapper >.main-content >.left 
 {
-    max-width: var(--ld-main-wrapper);
+    max-width: 450px;
     margin: 0 auto;
 }
-
-.ld-login >.ld-wrapper >.ld-header 
+.ld-login >.ld-wrapper >.main-content >.left >.radio-buttons >.title
 {
-    height: var(--ld-header-size);
-    width: 100%;
-    background-color: white;
-    box-shadow: 0px 4px 6px rgb(0, 0, 0, 0.15);
-    
-    position: fixed;
-    left: 0;
-    top: 0;
+    font-size: calc(var(--ld-font-size-base) + 8px);
+    font-weight: 800;
+    margin-bottom: 16px;
 }
 
-.ld-login >.ld-wrapper >.ld-header >.wrapper 
+.ld-login >.ld-wrapper >.main-content >.left >.radio-buttons >.buttons >.ld-radio
 {
-    max-width: var(--ld-main-wrapper);
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
+    margin-right: 70px;
 }
 
-.ld-login >.ld-wrapper >.ld-header >.wrapper >.image-wrapper
+.ld-login >.ld-wrapper >.main-content >.left >.radio-buttons
 {
-    height: var(--ld-header-size);
-    padding: 16px 0;
+    margin-bottom: 42px;
 }
 
-.ld-login >.ld-wrapper >.ld-header >.wrapper >.image-wrapper >.image
+.ld-login >.ld-wrapper >.main-content >.left >.main-title
 {
-    height: 100%;
+    font-weight: 800;
+    margin-bottom: 40px;
 }
 
-.ld-login >.ld-wrapper >.main-content
+.ld-login >.ld-wrapper >.main-content >.left >.main-title >.up
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: var(--ld-header-size);
+    font-size: calc(var(--ld-font-size-base) + 38px);
+    display: block;
+    margin-bottom: 7px;
 }
 
-.ld-login >.ld-wrapper >.main-content >.left
+.ld-login >.ld-wrapper >.main-content >.left >.main-title >.down
 {
-    padding-top: 48px;
+    font-size: calc(var(--ld-font-size-base) + 22px);
 }
 
-.ld-login >.ld-wrapper >.main-content >.right
+.ld-login >.ld-wrapper >.main-content >.left >.steps
 {
-    overflow: hidden;
-    position: relative;
-    height: 100vh;
-}
-
-.ld-login >.ld-wrapper >.main-content >.right >.image
-{
-    position: absolute;
-    height: 100%;
-    top: 0;
-
-    min-width: 100%;
-    /*To centralize the image in the div, ignoring the initial part of it and focusing on the content in the middle*/
-    left: 50%;
-    transform: translateX(-50%);
+    display: block;
+    font-weight: 800;
+    font-size: calc(var(--ld-font-size-base) + 4px);
+    color: var(--ld-color-gray);
+    margin-bottom: 13px;
 }
