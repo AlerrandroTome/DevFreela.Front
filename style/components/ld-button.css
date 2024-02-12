@@ -12,6 +12,13 @@
     transition: background-color 0.5s;
 }
 
+.ld-button.-small
+{
+    font-size: calc(var(--ld-font-size-base) + 4px);
+    font-weight: 600;
+    padding: 12px 30px;
+}
+
 .ld-button:hover
 {
     background-color: var(--ld-color-primary-light);
