@@ -1,7 +1,7 @@
 .ld-login >.ld-wrapper >.main-content >.left 
 {
     max-width: 450px;
-    margin: 0 auto;
+    margin: auto;
 }
 .ld-login >.ld-wrapper >.main-content >.left >.radio-buttons >.title
 {

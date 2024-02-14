@@ -5,7 +5,8 @@
     padding-left: 32px;
     padding-top: 2px;
     cursor: pointer;
-
+    
+    font-family: var(--ld-font-family-base);
     font-size: calc(var(--ld-font-size-base) + 8px);
 }
 

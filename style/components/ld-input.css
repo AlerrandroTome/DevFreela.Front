@@ -1,6 +1,7 @@
 .ld-input 
 {
-    font-size: calc(var(--ld-font-size-base) + 8);
+    font-family: var(--ld-font-family-base);
+    font-size: calc(var(--ld-font-size-base) + 8px);
     border: none;
     background: none;
 
@@ -15,7 +16,7 @@
 
 .ld-input:focus
 {
- border-color: var(--ld-color-primary);
+    border-color: var(--ld-color-primary);
 }
 
 .ld-input::placeholder 
