@@ -18,7 +18,7 @@ function saveUser() {
     
     if(!checkIfAnyRoleIsChecked())
     {
-        alert('Marque alguma role!');
+        Swal.Fire('Oops!', "You have to mark a role", 'error');
         return;
     }
 
@@ -41,8 +41,21 @@ function saveUser() {
     })
     .then(response => response.json())
     .then(response => {
-        alert('Cadastrado com sucesso!');
-        
+        Swal.fire({
+            title: "Well done!",
+            text: "You've created a new user.",
+            icon: "success",
+            confirmButtonText: "Ok!"
+        }).then((result => 
+            {
+                if(result.isConfirmed) {
+                    localStorage.setItem("userName", response.fullName);
+                    localStorage.setItem("role", response.role === "dev" ? "Desenvolvedor" : "Cliente");
+                    localStorage.setItem("idClient", response.id);
+                    
+                    window.location.href = "list.html";
+                }
+        }));
     })
     /* 
     // IF YOU WANT TO TREAT THE ERRORS
