@@ -28,14 +28,14 @@ function setScreenType()
     // MODO CRIAR
     if(screenType === 'create')
     {
-        document.querySelector('#main-title').innerText = "Vamos cadastrar seu novo projeto!";
-        document.querySelector('#action-button').innerText = "Cadastrar";
+        document.querySelector('#main-title').innerText = "Let's register your new project!";
+        document.querySelector('#action-button').innerText = "Register";
     }
     // MODO EDITAR
     else
     {
-        document.querySelector('#main-title').innerText = "Editar projeto";
-        document.querySelector('#action-button').innerText = "Salvar";
+        document.querySelector('#main-title').innerText = "Edit project";
+        document.querySelector('#action-button').innerText = "Save";
     }
 }
 

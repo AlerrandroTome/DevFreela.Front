@@ -55,7 +55,7 @@ function buildTable()
                                 <h6 class="title">${element.title}</h6>
                                 <p class="description">${element.description}</p>
                             </div>
-                            <div class="price">R$ ${element.totalCost}</div>
+                            <div class="price">$ ${element.totalCost}</div>
                             <div class="actions">
                                 <span class="edit material-icons" onClick="goToEdit(${element.id})">edit</span>
                                 <span class="delete material-icons" onClick="deleteProject(${element.id})">delete_outlined</span>
