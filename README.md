@@ -1,4 +1,4 @@
-# DevFreela.Front
+# DevFreela.Front.JS
 Simple project to exercise the use of the technologies:
 - HTML 5
 - CSS
